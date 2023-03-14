@@ -1,0 +1,81 @@
+.checkout-form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all 2s linear;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 25px;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 176, 155, 0.5), rgba(150, 201, 61, 1));
+    padding-bottom: 70px;
+}
+
+.checkout-form form {
+    padding: 20px;
+    width: 500px;
+    background-color: #FFF;
+    box-shadow: 0 5px 10px, rgba(0, 0, 0, .1);
+}
+
+.checkout-row {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.container form .checkout-row {
+    flex: 1 1 250px;
+}
+
+.checkout-row .checkout-title {
+    font-size: 20px;
+    color: #333;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.checkout-row .input-box {
+    margin: 10px 0;
+}
+
+.input-box span {
+    margin-bottom: 10px;
+    display: block;
+}
+
+.input-box input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px 15px;
+    font-size: 15px;
+    text-transform: none;
+}
+
+.input-box input:focus {
+    border: 1px solid black;
+}
+
+.select-box #cxRegion {
+    width: 25%;
+    font-size: 15px;
+}
+
+.payment-select {
+    margin: 5px 0 5px;
+}
+
+#place-order {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    font-size: 17px;
+    background: #DAF736;
+    margin-top: 5px;
+    cursor: pointer;
+}

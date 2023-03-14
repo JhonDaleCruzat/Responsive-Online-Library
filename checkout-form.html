@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/919d4b6d44.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/style.css">
+    <link rel="stylesheet" href="assets/checkout-style.css">
+    <title>Checkout Form</title>
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-brand">
+            <img src="assets/Images/Library-Brand.png" alt="Syllogi Sophia">
+        </div>
+    </header>
+    <nav class="nav-container">
+        <div class="nav-bar">
+            <ul class="nav-list">
+                <li><a href=""><span>HOME</span></a></li>
+                <li><a href=""><span>SHOP</span></a></li>
+                <li><a href=""><span>ABOUT</span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="checkout-form">
+        <form action="#">
+                <div class="checkout-row">
+                    <h3 class="checkout-title">Billing Form</h3>
+                    <div class="input-box">
+                        <label for="cxName">Name: </label>
+                        <input type="text" id="cxName" name="cxName" size="50" placeholder="ex. Juan Dela Cruz" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="cxAdress">Address: </label>
+                        <input type="text" id="cxAddress" name="cxAddress" size="50" placeholder="House Number, Street, Barangay, City/Municipality & Province" required>
+                    </div>
+                    <div class="select-box">
+                        <label for="cxRegion">Region: </label>
+                        <select name="cxRegion" id="cxRegion">
+                            <option value="NCR" title="National Capital Region">NCR</option>
+                            <option value="CAR" title="Cordillera Administrative Region">CAR</option>
+                            <option value="BARMM" title="Bangsamoro Autonomous Region in Muslim Mindanao">BARMM</option>
+                            <option value="region1" title="Ilocos Region">Region I</option>
+                            <option value="region2" title="Cagayan Valley">Region II</option>
+                            <option value="region3" title="Central Luzon">Region III</option>
+                            <option value="region4A" title="CALABARZON">Region IV-A</option>
+                            <option value="region4B" title="MIMAROPA">Region IV-B</option>
+                            <option value="region5" title="Bicol Region">Region V</option>
+                            <option value="region6" title="Western Visayas">Region VI</option>
+                            <option value="region7" title="Central Visayas">Region VII</option>
+                            <option value="region8" title="Eastern Visayas">Region VIII</option>
+                            <option value="region9" title="Zamboanga Peninsula">Region IX</option>
+                            <option value="region10" title="Northern Mindanao">Region X</option>
+                            <option value="region11" title="Davao Region">Region XI</option>
+                            <option value="region12" title="SOCCSKSARGEN">Region XII</option>
+                            <option value="region13" title="Caraga">Region XIII</option>
+                        </select>
+                    </div>
+                    <div class="input-box">
+                        <label for="cxNum">Contact Number: </label>
+                        <input type="tel" id="cxNum" name="cxNum" pattern="[0]{1}[9]{1}[0-9]{9}" size="50" placeholder="Please enter your 11-digit mobile no., ex.(09123456789)"required>
+                    </div>
+                    <!-- Payment Method -->
+                    <div class="select-box"></div>
+                        <label for="payment-method">Payment Method:</label>
+                        <div class="payment-select">
+                            <input type="radio" id="cOD" name="paymentMethod" value="coD">
+                            <label for="cOD">Cash on Delivery</label>
+                        </div>
+                        <div class="payment-select">
+                            <input type="radio" id="masterCard" name="paymentMethod" value="masterCard">
+                            <label for="masterCard">Master Card</label>
+                        </div>
+                        <div class="payment-select">
+                            <input type="radio" id="visa" name="paymentMethod" value="visa">
+                            <label for="visa">Visa</label>
+                        </div>
+                        <div class="payment-select">
+                            <input type="radio" id="americanEx" name="paymentMethod" value="americanEx">
+                            <label for="americanEx">American Express</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- Place Order  -->
+            <input type="submit" value="Place Order" id="place-order" name="place-order">
+        </form>
+    </section>
+
+    <footer class="footer-container">
+        <div class="footer-content">
+            <h3>Syllogi Sophia</h3>
+            <p> A book haven that was made for people like you. Browse your favorite books here with us.</p>
+            <p> Contact us here:</p>
+            <ul class="footer-social">
+                <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+                <li><a href="#"><i class="fa fa-linkedin-square"></i></a><li>
+            </ul>
+        </div>
+        <div class="footer-copyright">
+            <p> Copyright &copy;2023 Syllogi Sophia. Designed by <span>JDC</span></p>
+        </div>
+    </footer>
+</body>
+</html>
